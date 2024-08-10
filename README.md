@@ -2,7 +2,8 @@
 
 <details>
    <summary>English</summary>
-
+   **Is still in development!**
+   
    **WhisperSyncCopy** is a tool designed to manually synchronize files between two directories, ensuring that only modified files are copied.
 
    #### Steps to use WhisperSyncCopy:
@@ -34,6 +35,7 @@
 
 <details>
    <summary>Русский</summary>
+   **Все ещё в разработке!**
 
    **WhisperSyncCopy** — это инструмент для ручной синхронизации файлов между двумя директориями, который копирует только измененные файлы.
 
