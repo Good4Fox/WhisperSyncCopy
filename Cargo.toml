@@ -4,3 +4,22 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+clap = { version = "4.0", features = ["derive"] }
+dialoguer = "0.10" 
+toml = "0.5"
+console = "0.15"
+indicatif = "0.17"
+glob = "0.3"
+ignore = "0.4"
+notify = "5.0"
+
+[profile.release]
+opt-level = "z"
+strip = "debuginfo"
+panic = "abort"
+lto = true
+
+[build]
+rustflags = ["-Ctarget-feature=+crt-static"]

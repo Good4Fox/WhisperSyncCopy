@@ -1,0 +1,53 @@
+[menu]
+menu_welcome = "Welcome to the menu"
+menu_options_0 = "Synchronization"
+menu_options_1 = "Settings"
+menu_sync_start = "Synchronization is starting..."
+menu_settings_language_update = "Language successfully changed. Restarting the program..."
+
+[sync]
+sync_async = "Auto synchronization"
+sync_sync = "Path synchronization"
+sync_async_continue = "Do you want to continue synchronization?"
+sync_async_wait_for_next = "Waiting before the next synchronization..."
+sync_async_error_occurred = "An error occurred during automatic synchronization."
+sync_async_select_action = "Select an action"
+sync_async_stop = "Disable"
+sync_async_stopped = "Automatic synchronization has been stopped."
+sync_actual = "All files are up to date."
+sync_files_sync = "Synchronizing files..."
+sync_files_sync_completed = "Synchronization completed."
+sync_file_does_not_exist = "File does not exist:"
+sync_file_damaged = "File is damaged or has been changed in size or date:"
+sync_file_relevant = "File is relevant:"
+sync_file_not_exist = "Target file does not exist:"
+sync_file_size_original = "Size of the original file:"
+sync_file_size_targeted = "size of the target file:"
+sync_size_file_mismatch_s = "File sizes do not match: source ="
+sync_size_file_mismatch_d = "destination ="
+sync_data_file_mismatch_s = "Modification date of the original file:"
+sync_data_file_mismatch_d = "modification date of the target file:"
+sync_data_edit_file_mismatch_s = "File modification dates do not match: source ="
+sync_error_meta_original = "Error retrieving metadata of the original file:"
+sync_error_meta_targeted = "Error retrieving metadata of the target file:"
+
+[settings]
+settings = "Settings"
+settings_language = "Change Language"
+settings_sync_path = "Change synchronization paths"
+settings_config_del = "Delete config"
+settings_confirmation = "Are you sure you want to delete"
+settings_file_delete = "File was successfully deleted:"
+settings_file_delete_error = "Error deleting file:"
+settings_file_delete_canceled = "File deletion canceled."
+settings_file_delete_none = "File not found:"
+settings_file_new_source = "Enter new path for the source folder"
+settings_file_new_destination = "Enter new path for the destination folder"
+settings_sync_successfully = "Synchronization paths successfully updated."
+
+[system]
+system_exit = "Exit"
+system_back = "Back"
+
+[msg]
+msg_exit = "Disconnecting ... "

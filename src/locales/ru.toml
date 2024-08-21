@@ -1,0 +1,53 @@
+[menu]
+menu_welcome = "Добро пожаловать в меню"
+menu_options_0 = "Синхронизация"
+menu_options_1 = "Настройки"
+menu_sync_start = "Начинается синхронизация..."
+menu_settings_language_update = "Язык успешно изменен. Перезапуск программы..."
+
+[sync]
+sync_async = "Авто синхронизация"
+sync_sync = "Синхронизация путей"
+sync_async_continue = "Хотите продолжить синхронизацию?"
+sync_async_wait_for_next = "Ожидание перед следующей синхронизацией..."
+sync_async_error_occurred = "Ошибка автоматической синхронизации."
+sync_async_select_action = "Выберите действие"
+sync_async_stop = "Отключить"
+sync_async_stopped = "Автоматическая синхронизация остановлена."
+sync_actual = "Все файлы актуальны."
+sync_files_sync = "Синхронизация файлов..."
+sync_files_sync_completed = "Синхронизация завершена."
+sync_file_does_not_exist = "Файл не существует:"
+sync_file_damaged = "Файл повреждён или изменён по размеру или дате:"
+sync_file_relevant = "Файл актуален:"
+sync_file_not_exist = "Целевой файл не существует:"
+sync_file_size_original = "Размер исходного файла:"
+sync_file_size_targeted = "размер целевого файла:"
+sync_size_file_mismatch_s = "Размеры файлов не совпадают: source ="
+sync_size_file_mismatch_d = "destination ="
+sync_data_file_mismatch_s = "Дата изменения исходного файла:"
+sync_data_file_mismatch_d = "дата изменения целевого файла:"
+sync_data_edit_file_mismatch_s = "Даты изменения файлов не совпадают: source ="
+sync_error_meta_original = "Ошибка при получении метаданных исходного файла:"
+sync_error_meta_targeted = "Ошибка при получении метаданных целевого файла:"
+
+[settings]
+settings = "Настройки"
+settings_language = "Изменить Язык"
+settings_sync_path = "Изменить пути синхронизации"
+settings_config_del = "Удалить конфиг"
+settings_confirmation = "Вы уверены, что хотите удалить"
+settings_file_delete = "Файл был успешно удален:"
+settings_file_delete_error = "Ошибка при удалении файла:"
+settings_file_delete_canceled = "Удаление файла отменено."
+settings_file_delete_none = "Не найден файл:"
+settings_file_new_source = "Введите новый путь для исходной папки"
+settings_file_new_destination = "Введите новый путь для папки назначения"
+settings_sync_successfully = "Пути синхронизации успешно обновлены."
+
+[system]
+system_exit = "Выйти"
+system_back = "Назад"
+
+[msg]
+msg_exit = "Отключение ... "
