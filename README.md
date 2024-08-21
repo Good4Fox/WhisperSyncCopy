@@ -2,68 +2,140 @@
 
 <details>
    <summary>English</summary>
-   
-   **Is still in development!**
-   
-   **WhisperSyncCopy** is a tool designed to manually synchronize files between two directories, ensuring that only modified files are copied.
+
+   **WhisperSyncCopy** is a tool for manually synchronizing files between two directories, copying only the changed files.
 
    #### Steps to use WhisperSyncCopy:
 
-   1. **Language Selection:**
-      - On the first launch, the program will ask you to select a language. Choose "1" for English or "2" for Russian.
+   1. **Language selection:**
+      - On the first run, the program will prompt you to select a language. Use the up and down arrows to select the language, then press Enter.
 
-   2. **Configuring Source and Destination Directories:**
-      - The program will prompt you to enter the source and destination directory paths. If you have used the program before, it will ask if you want to use the previously saved paths.
-      - After entering the paths, you will have the option to save them for future use.
+   2. **Main Menu:**
+      - After selecting the language, you will enter the main menu where you can choose one of the following options:
+        - **Synchronize**: to start the file synchronization process.
+        - **Settings**: to change the language, directories, and other parameters.
+        - **Exit**: to exit the program.
 
-   3. **Handling the `.getignore` File:**
-      - If a `.getignore` file does not exist in the program's directory, the program will ask if you want to create one. This file allows you to specify files or directories that should be ignored during synchronization.
-      - To add files or directories to be ignored, simply list their names in the `.getignore` file, one per line.
+   3. **Setting up source and target directories:**
+      - In the settings section, the program will ask you for the paths to the source and target directories. If you have used the program before, it will apply the saved paths.
+
+   4. **Working with the `WhisperSyncCopy.toml` file:**
+      - By default, the file looks like this:
+      ```
+      [language]
+      current = ""
+
+      [paths]
+      source = ""
+      destination = ""
+      save_paths = true
+
+      [getignore]
+      patterns = []
+
+      ```
+      - You can manually change the language by setting `current` to `ru` or `en`.
+      - You can also change the source and destination paths for synchronization.
+      - You can add ignored paths in the `patterns` section.
+
+      **The structure will look like this:**
+      ```
+      [getignore]
+      patterns = [
+         "/*", (to block all content)
+         "/*.log", (to block specific files or files in a path)
+      ]
+      ```
 
       **Example:**
-      - To ignore a specific file: `file.txt`
-      - To ignore all files in a directory: `directory_name/`
-      - To ignore a specific file inside a directory: `directory_name/file.txt`
+      ```
+      "/home/*",
+      "/home/logs/*", (to block all content)
+      "/home/logs", (to block folder creation)
+      "/home/logs/*.log" (to block files with the .log extension)
+      ```
 
-   4. **Manual File Synchronization:**
-      - The program will copy all modified files from the source to the destination directory, skipping any files listed in the `.getignore` file.
+   5. **Manual file synchronization:**
+      - The program will copy all changed files from the source directory to the target directory, skipping the files specified in the `WhisperSyncCopy.toml` file.
       - **Note:** Synchronization is not automatic. You will need to manually run the program each time you want to synchronize the directories.
+      - Automatic synchronization will request permission after each synchronization. This can be useful if you need to synchronize data frequently.
 
-   5. **Completion:**
-      - After the synchronization is complete, the program will notify you that the files have been successfully copied.
+   6. **Settings:**
+      - Change language
+      - Change directory
+      - Delete config
+
+   7. **Completion:**
+      - After synchronization is complete, the program will notify you that the files have been successfully copied.
 
 </details>
 
 <details>
    <summary>Русский</summary>
-   
-   **Все ещё в разработке!**
 
    **WhisperSyncCopy** — это инструмент для ручной синхронизации файлов между двумя директориями, который копирует только измененные файлы.
 
    #### Шаги использования WhisperSyncCopy:
 
    1. **Выбор языка:**
-      - При первом запуске программа предложит вам выбрать язык. Нажмите "1" для английского или "2" для русского.
+      - При первом запуске программа предложит вам выбрать язык. Используйте стрелки вверх и вниз для выбора языка, затем нажмите Enter.
 
-   2. **Настройка исходной и целевой директорий:**
-      - Программа запросит у вас пути к исходной и целевой директориям. Если вы уже использовали программу ранее, она предложит использовать сохраненные пути.
-      - После ввода путей вам будет предложено сохранить их для дальнейшего использования.
+   2. **Главное меню:**
+      - После выбора языка вы попадете в главное меню, где можно выбрать один из следующих пунктов:
+        - **Синхронизация**: для начала процесса синхронизации файлов.
+        - **Настройки**: для изменения языка, директорий и других параметров.
+        - **Выйти**: для выхода из программы.
 
-   3. **Работа с файлом `.getignore`:**
-      - Если файл `.getignore` не существует в директории программы, программа спросит, хотите ли вы его создать. Этот файл позволяет указать файлы или директории, которые нужно игнорировать во время синхронизации.
-      - Чтобы добавить игнорируемые файлы или директории, просто укажите их названия в файле `.getignore`, по одному на каждой строке.
+   3. **Настройка исходной и целевой директорий:**
+      - В разделе настроек программа запросит у вас пути к исходной и целевой директориям. Если вы уже использовали программу ранее, она применет сохраненые пути.
+
+   4. **Работа с файлом `WhisperSyncCopy.toml`:**
+      - По умолчанию файл выглядит так:
+      ```
+      [language]
+      current = ""
+
+      [paths]
+      source = ""
+      destination = ""
+      save_paths = true
+
+      [getignore]
+      patterns = []
+
+      ```
+      - В нем можно вручную изменить язык, установив `current` на `ru` или `en`.
+      - Также можно изменить исходный и конечный путь синхронизации.
+      - Также можно добавить игнорируемые пути в `patterns`.
+
+      **Структура будет выглядеть так:**
+      ```
+      [getignore]
+      patterns = [
+         "/*", (для запрета содержимого)
+         "/*.log", (для запрета файла или файлов в пути)
+      ]
+      ```
 
       **Пример:**
-      - Чтобы игнорировать конкретный файл: `file.txt`
-      - Чтобы игнорировать все файлы в директории: `directory_name/`
-      - Чтобы игнорировать конкретный файл внутри директории: `directory_name/file.txt`
+      ```
+      "/home/*",
+      "/home/logs/*", (для запрета содержимого)
+      "/home/logs", (для запрета создания папки)
+      "/home/logs/*.log" (для запрета файла с расширением .log)
+      ```
 
-   4. **Ручная синхронизация файлов:**
-      - Программа скопирует все измененные файлы из исходной директории в целевую, пропуская те файлы, которые указаны в файле `.getignore`.
+   5. **Ручная синхронизация файлов:**
+      - Программа скопирует все измененные файлы из исходной директории в целевую, пропуская те файлы, которые указаны в файле `WhisperSyncCopy.toml`.
       - **Примечание:** Синхронизация не является автоматической. Вам нужно будет вручную запускать программу каждый раз, когда вы хотите синхронизировать директории.
+      - Автоматическая синхронизация после каждой синхронизации будет запрашивать разрешение на синхронизацию. Она будет полезной в случае, если нужно часто синхронизировать данные.
 
-   5. **Завершение:**
+   6. **Настройки:**
+      - Изменить язык
+      - Изменить директорию
+      - Удалить конфиг
+
+   7. **Завершение:**
       - После завершения синхронизации программа уведомит вас о том, что файлы успешно скопированы.
 
 </details>
