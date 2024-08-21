@@ -42,8 +42,8 @@
       ```
       [getignore]
       patterns = [
-         "/*", (to block all content)
-         "/*.log", (to block specific files or files in a path)
+         "/*",
+         "/*.log",
       ]
       ```
 
@@ -112,8 +112,8 @@
       ```
       [getignore]
       patterns = [
-         "/*", (для запрета содержимого)
-         "/*.log", (для запрета файла или файлов в пути)
+         "/*",
+         "/*.log",
       ]
       ```
 
